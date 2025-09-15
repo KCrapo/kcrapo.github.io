@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.7;
+    text-align: center;
+}
+
+header {
+    padding: 16px 0;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 24px auto 40px;
+    padding: 0 16px;
+}
+
+main h3 {
+    margin: 10px 0 12px;
+    font-size: 1.6rem;
+}
+
+
+/* Images */
+
+main img {
+    display: block;
+    margin: 18px auto 20px;
+    width: clamp(200px, 45vw, 500px);
+    max-height: 500px;
+    height: auto;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Lists */
+
+ul,
+ol {
+    text-align: left;
+    display: inline-block;
+    padding-left: 18px;
+    margin: 12px auto 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul li,
+ol li {
+    margin: 6px 0;
+}
+
+a {
+    font-weight: 700;
+}
+
+
+/* Tables */
+
+table {
+    margin: 18px auto;
+    border-collapse: collapse;
+    width: 92%;
+    max-width: 720px;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+th {
+    font-weight: 700;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 32px;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+}
+
+
+/* Home */
+
+body.home {
+    background-color: #1a1a1a;
+    color: #e8e8e8;
+}
+
+body.home header,
+body.home footer {
+    background-color: #2b2b2b;
+    color: #e8e8e8;
+}
+
+body.home nav a {
+    background-color: #2f2f2f;
+    color: #e8e8e8;
+}
+
+body.home a {
+    color: #00ffcc;
+}
+
+body.home main img {
+    border-color: #00e6c0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), 0 0 18px rgba(0, 255, 204, 0.25);
+}
+
+
+/* Viruses */
+
+body.virus-page {
+    background-color: #122050;
+    color: #e6f7ff;
+}
+
+body.virus-page header,
+body.virus-page footer {
+    background-color: #243e92;
+    color: #e6f7ff;
+}
+
+body.virus-page nav a {
+    background-color: #243e92;
+    color: #e6f7ff;
+}
+
+body.virus-page a {
+    color: #bdefff;
+}
+
+body.virus-page main img {
+    width: clamp(200px, 45vw, 500px);
+    max-height: 500px;
+    height: auto;
+    border: 2px solid #00c8ff;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3), 0 0 14px rgba(0, 200, 255, 0.18);
+}
+
+
+/* Trojans */
+
+body.trojan-page {
+    background-color: #2a0000;
+    color: #fff4f6;
+}
+
+body.trojan-page header,
+body.trojan-page footer {
+    background-color: #7a0000;
+    color: #fff4f6;
+}
+
+body.trojan-page nav a {
+    background-color: #7a0000;
+    color: #fff4f6;
+}
+
+body.trojan-page a {
+    color: #ffd1d9;
+}
+
+body.trojan-page th,
+body.trojan-page td {
+    border-color: rgba(255, 170, 185, 0.55);
+}
+
+body.trojan-page table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.035);
+}
+
+body.trojan-page main img {
+    border-color: #ff3355;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 51, 85, 0.3);
+}
+
+
+/* Worms */
+
+body.worm-page {
+    background-color: #002600;
+    color: #eafff1;
+}
+
+body.worm-page header,
+body.worm-page footer {
+    background-color: #0a7a0a;
+    color: #eafff1;
+}
+
+body.worm-page nav a {
+    background-color: #0a7a0a;
+    color: #eafff1;
+}
+
+body.worm-page a {
+    color: #adffcf;
+}
+
+body.worm-page th,
+body.worm-page td {
+    border-color: rgba(173, 255, 207, 0.5);
+}
+
+body.worm-page main img {
+    border-color: #00ff66;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35), 0 0 18px rgba(0, 255, 102, 0.3);
+}
+
+main p {
+    text-align: left;
+    margin: 0 auto 16px;
+}
+
+
+/* Headings */
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 1.25;
+    margin: 18px 0 6px;
+}
+
+
+/* Reduce gap between h4 and the NEXT element */
+
+h4+p,
+h4+ul,
+h4+ol,
+h4+table,
+h4+img {
+    margin-top: 6px;
+}
