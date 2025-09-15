@@ -210,6 +210,9 @@ body.trojan-page td {
     border-color: rgba(255, 170, 185, 0.55);
 }
 
+
+/*this line was generated with the help of llm to try and fix a color issue*/
+
 body.trojan-page table tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.035);
 }
