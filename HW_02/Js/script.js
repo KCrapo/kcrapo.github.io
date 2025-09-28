@@ -21,8 +21,6 @@ const symbols = ["🍒", "🍒", "🍒", "⭐", "⭐", "⭐", "⭐", "BAR", "BAR
 
 let balance = 1000;
 
-const bet = parseInt(Bet.value, 10);
-
 // game Loop
 function playSlots() {
   const bet = parseInt(Bet.value, 10);
@@ -58,9 +56,8 @@ function playSlots() {
   const mult = payoutMultiplier(reels);
   const winnings = Math.floor(bet * mult);
 
-  bank.textContent = balance;
-
   balance += winnings;
+  bank.textContent = balance;
 
   //I had to look up how to do the formatted message stuff:
   // Link for my studying reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
