@@ -64,7 +64,7 @@ function playSlots() {
 
   // Message
   if (mult > 0) {
-    message.textContent = `WIN! ${reels.join(" ")} → ${mult}x → +$${winnings}`;
+    message.textContent = `WIN! ${reels.join(" ")} → ${mult}x → +$${winnings-25}`;
     message.style.color = "green";
     resultImg.src = "img/win.png";
     resultImg.style.display = "block";
