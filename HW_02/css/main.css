@@ -7,6 +7,15 @@ body {
     text-align: center;
 }
 
+.bank {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(0, 255, 42);
+    padding: 10px 16px;
+    margin-bottom: 20px;
+}
+
+
 main {
     max-width: 720px;
     margin: 0 auto;
