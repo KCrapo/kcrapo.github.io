@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
+    <title>Slot Machine!</title>
+  </head>
+  <body>
+    <header>
+      <h1>🎰 Play Slots NOW 🎰</h1>
+    </header>
+    <main>
+      <!-- Bank / balance -->
+      <div>Bank: $<span id="bank">1000</span></div>
+
+      <!-- Columns ("Reels" in casino speak")-->
+      <div>
+        <span id="r1" class="reel">?</span>
+        <span id="r2" class="reel">?</span>
+        <span id="r3" class="reel">?</span>
+      </div>
+
+      <!-- Controls -->
+      <!-- step=1 forces whole number input -->
+      <div id="userInput">
+        <input
+          type="number"
+          id="Bet"
+          placeholder="Enter bet"
+          min="1"
+          step="1"
+        />
+      </div>
+
+      <div id="Buttons">
+        <button id="slotBtn">Spin</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <!-- Message area -->
+      <p id="message"></p>
+      <img
+        id="resultImg"
+        alt="result"
+        style="display: none; max-width: 160px"
+      />
+      <!-- Toggle Payout Table -->
+      <button id="togglePayouts">Show Payouts</button>
+      <!-- Payout Table -->
+      <section class="payouts" id="payouts">
+        <table class="payout-table" aria-label="Slot machine payout table">
+          <thead>
+            <tr>
+              <th>Combination</th>
+              <th>Pays</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7 7 7</td>
+              <td>100x</td>
+            </tr>
+            <tr>
+              <td>BAR BAR BAR</td>
+              <td>25x</td>
+            </tr>
+            <tr>
+              <td>🍒 🍒 🍒</td>
+              <td>4x</td>
+            </tr>
+            <tr>
+              <td>🍒 🍒 (any)</td>
+              <td>1.2x</td>
+            </tr>
+            <tr>
+              <td>🍒 (any)</td>
+              <td>1.1x</td>
+            </tr>
+            <tr>
+              <td>⭐ ⭐ ⭐</td>
+              <td>4x</td>
+            </tr>
+            <tr>
+              <td>⭐ ⭐</td>
+              <td>2x</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
