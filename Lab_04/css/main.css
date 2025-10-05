@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f7f8fb;
+    color: #111
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    text-align: center
+}
+
+fieldset {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: 12px
+}
+
+legend {
+    font-weight: 600
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    margin: 6px 0 12px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15)
+}
+
+#submit {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer
+}
+
+#submit:hover {
+    filter: brightness(.96)
+}
+
+#submit:active {
+    filter: brightness(.9)
+}
+
+#pwSuggestion {
+    display: block;
+    margin: 4px 0 12px;
+    font-size: 14px;
+    color: #555;
+    min-height: 1em
+}
+
+#aMessage {
+    margin-top: 8px;
+    font-weight: 600;
+    min-height: 1em
+}
+
+#zipNotFound {
+    margin-left: 8px;
+    color: #c00;
+    min-height: 1em
+}
+
+#cityText,
+#latText,
+#lngText {
+    font-weight: 600
+}
+
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+select:disabled {
+    background: #f3f4f6;
+    color: #888
+}
+
+input,
+select {
+    transition: border-color .15s, box-shadow .15s, filter .1s
+}
+
+small {
+    line-height: 1.2
+}
+
+#stateSelect {
+    min-width: 160px
+}
+
+#countySelect {
+    min-width: 160px
+}
+
+select option {
+    color: #111
+}
